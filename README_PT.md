@@ -1,136 +1,331 @@
-# 📱 FinSight – Aplicativo de Análise de Comportamento Financeiro
+Perfeito — isso aqui vai te ajudar muito pra vaga internacional. Vou te entregar duas versões (🇺🇸 EN + 🇧🇷 PT) já otimizadas com **palavras-chave ATS** que recrutadores e sistemas filtram.
+
+---
+
+# 🇺🇸 FinSight – Financial Behavior Insights Platform
+
+## 🚀 Overview
+
+**FinSight** is a full-stack **financial data analytics platform** designed to collect, manage, and analyze **user financial behavior** in real-world environments.
+
+The system combines:
+
+* 📱 **Mobile Application (Android - Kotlin, MVVM)**
+* 🌐 **Web Dashboard (PHP, SQLite, REST API)**
+* 🧠 **Data Analytics (Python)**
+
+Built with a focus on **data-driven decision-making**, **user behavior analysis**, and **financial risk assessment**.
+
+---
+
+## 🎯 Problem Statement
+
+Financial institutions face challenges in collecting **structured, real-time financial behavior data** from users in field environments.
+
+FinSight provides:
+
+* Efficient **data collection workflows**
+* Structured **data storage and processing**
+* Actionable **analytics and insights dashboards**
+
+---
+
+## 🧠 Key Features (ATS Keywords)
+
+* Financial Data Analysis
+* User Behavior Analytics
+* Data Collection System
+* REST API Development
+* Full-Stack Development
+* Mobile Development (Android, Kotlin)
+* MVVM Architecture
+* SQLite / Room Database
+* Data Visualization (Dashboards, Charts)
+* Geolocation Integration (GPS)
+* Role-Based Access Control (RBAC)
+* Secure Authentication (bcrypt, sessions)
+* Accessibility (TTS, ARIA, high contrast)
+
+---
+
+## 🏗️ Architecture
+
+### 🔹 Web Application
+
+* PHP 8+
+* SQLite (PDO)
+* RESTful API
+* Server-side rendering
+
+### 🔹 Mobile Application
+
+* Kotlin
+* Android Studio
+* MVVM Architecture
+* Room Database (SQLite)
+
+### 🔹 Analytics Layer
+
+* Python (data processing & reporting)
+
+---
+
+## 📱 Mobile App Features
+
+### 🔐 Authentication
+
+* Role-based access: **Admin / Agent**
+
+### 📊 Data Collection Workflow
+
+* Financial Preferences (Credit, Investment, Savings, Loan, Card)
+* Financial Challenges (Debt, Low Income, Fraud Risk, etc.)
+* User Data Collection:
+
+  * Name
+  * Phone
+  * Timestamp
+  * Geolocation (GPS)
+
+---
+
+## 🌐 Web Dashboard Features
+
+### 📊 Data Visualization
+
+* KPI Metrics
+* Behavioral trends
+* Risk distribution charts
+* Agent performance tracking
+
+### 👥 User & Data Management
+
+* View and manage collected data
+* Edit and delete records
+* User role management
+
+### 📈 Risk Classification
+
+* Low Risk
+* Medium Risk
+* High Risk
+
+---
+
+## ⚙️ Tech Stack (ATS Optimized)
+
+* **Frontend:** HTML, CSS, JavaScript
+* **Backend:** PHP
+* **Mobile:** Kotlin (Android)
+* **Database:** SQLite, Room
+* **Architecture:** MVVM, Clean Architecture
+* **Analytics:** Python
+* **Tools:** Git, GitHub, Android Studio
+
+---
+
+## 🔐 Security
+
+* Password hashing (**bcrypt**)
+* Prepared statements (PDO)
+* Input sanitization
+* Session-based authentication
+
+---
+
+## 📍 Use Cases
+
+* Financial Behavior Analysis
+* Customer Profiling
+* Field Data Collection
+* Risk Assessment Systems
+
+---
+
+## 🔮 Future Improvements
+
+* Cloud integration (AWS, Firebase)
+* Machine Learning for risk scoring
+* Advanced analytics dashboards
+* API integrations for financial services
+
+---
+
+## 👩‍💻 Author
+
+**Michelle Kaolin Vieira Souza**
+
+---
+
+## 📄 License
+
+Educational project.
+
+---
+
+# 🇧🇷 FinSight – Plataforma de Análise de Comportamento Financeiro
 
 ## 🚀 Visão Geral
 
-O FinSight é um aplicativo mobile desenvolvido para coletar e analisar dados de comportamento financeiro em cenários reais. Ele permite que instituições financeiras, pesquisadores e analistas entendam melhor as necessidades dos usuários, identifiquem riscos financeiros e gerem insights relevantes.
+O **FinSight** é uma plataforma full-stack de **análise de dados financeiros**, projetada para coletar, gerenciar e analisar o **comportamento financeiro de usuários** em cenários reais.
 
-Este projeto foi desenvolvido com foco acadêmico, mas com aplicação voltada ao mercado financeiro.
+O sistema combina:
+
+* 📱 Aplicativo Mobile (Android - Kotlin, MVVM)
+* 🌐 Dashboard Web (PHP, SQLite, API REST)
+* 🧠 Análise de Dados (Python)
+
+Focado em **tomada de decisão baseada em dados**, **análise comportamental** e **classificação de risco financeiro**.
 
 ---
 
 ## 🎯 Problema
 
-Instituições financeiras enfrentam dificuldades para coletar dados estruturados e confiáveis sobre o comportamento financeiro dos clientes, principalmente em ambientes de campo.
+Instituições financeiras têm dificuldade em coletar **dados estruturados e confiáveis em tempo real**, especialmente em campo.
 
-O FinSight resolve esse problema oferecendo uma ferramenta simples e eficiente para coleta e análise de dados.
+O FinSight resolve isso com:
 
----
-
-## 🧩 Funcionalidades
-
-### 🔐 Autenticação
-
-* Usuários pré-definidos:
-
-  * Admin
-  * Agente (entrevistador)
+* Fluxo eficiente de **coleta de dados**
+* **Armazenamento estruturado**
+* **Dashboards analíticos** com insights acionáveis
 
 ---
 
-### 📊 Coleta de Dados (Fluxo do Agente)
+## 🧠 Principais Funcionalidades (Palavras-chave ATS)
 
-* Seleção de preferência financeira:
-
-  * Crédito
-  * Investimento
-  * Poupança
-  * Empréstimo
-  * Cartão
-
-* Seleção de até 3 problemas financeiros:
-
-  * Dívidas
-  * Falta de controle financeiro
-  * Baixa renda
-  * Falta de acesso a crédito
-  * Risco de fraude
-  * Falta de educação financeira
-
-* Registro de dados do usuário:
-
-  * Nome
-  * Celular
-  * Data e hora automáticas
-  * Geolocalização (latitude e longitude)
-
----
-
-### 📈 Dashboard (Admin)
-
-* Total de respostas
-* Preferência financeira mais comum
-* Problemas mais recorrentes
-* Classificação de risco financeiro:
-
-  * Baixo risco
-  * Médio risco
-  * Alto risco
-
----
-
-### 👥 Consulta de Usuários
-
-* Visualização dos entrevistados
-* Acesso aos dados coletados
-
----
-
-### 🧹 Gerenciamento de Dados
-
-* Limpeza completa dos dados coletados
+* Análise de Dados Financeiros
+* Análise de Comportamento do Usuário
+* Sistema de Coleta de Dados
+* Desenvolvimento de API REST
+* Desenvolvimento Full-Stack
+* Desenvolvimento Mobile (Android, Kotlin)
+* Arquitetura MVVM
+* Banco de Dados SQLite / Room
+* Visualização de Dados (Dashboards, Gráficos)
+* Integração com Geolocalização (GPS)
+* Controle de Acesso por Perfil (RBAC)
+* Autenticação Segura (bcrypt, sessões)
+* Acessibilidade (TTS, ARIA, alto contraste)
 
 ---
 
 ## 🏗️ Arquitetura
 
-O aplicativo segue uma arquitetura baseada em:
+### 🔹 Aplicação Web
 
-* MVVM (Model-View-ViewModel)
-* Princípios de Clean Architecture
+* PHP 8+
+* SQLite (PDO)
+* API REST
 
-### Camadas:
-
-* **UI** – Interface e interação
-* **Domain** – Regras de negócio
-* **Data** – Banco de dados local (Room)
-
----
-
-## 🛠️ Tecnologias Utilizadas
+### 🔹 Aplicação Mobile
 
 * Kotlin
 * Android Studio
-* Room Database (SQLite)
 * MVVM
-* Serviços de localização do Android
+* Room Database
+
+### 🔹 Camada de Analytics
+
+* Python
+
+---
+
+## 📱 Funcionalidades Mobile
+
+### 🔐 Autenticação
+
+* Perfis: **Admin e Agente**
+
+### 📊 Coleta de Dados
+
+* Preferências financeiras
+* Desafios financeiros
+* Dados do usuário:
+
+  * Nome
+  * Telefone
+  * Timestamp
+  * Geolocalização
+
+---
+
+## 🌐 Funcionalidades Web
+
+### 📊 Dashboard
+
+* KPIs
+* Tendências
+* Distribuição de risco
+* Performance de agentes
+
+### 👥 Gestão de Dados
+
+* Visualização e edição
+* Exclusão de registros
+* Controle de usuários
+
+### 📈 Classificação de Risco
+
+* Baixo
+* Médio
+* Alto
+
+---
+
+## ⚙️ Tecnologias (Otimizado para ATS)
+
+* **Frontend:** HTML, CSS, JavaScript
+* **Backend:** PHP
+* **Mobile:** Kotlin
+* **Banco de Dados:** SQLite, Room
+* **Arquitetura:** MVVM, Clean Architecture
+* **Analytics:** Python
+* **Ferramentas:** Git, GitHub, Android Studio
+
+---
+
+## 🔐 Segurança
+
+* Hash de senha com bcrypt
+* Prepared statements
+* Sanitização de dados
+* Sessões seguras
 
 ---
 
 ## 📍 Casos de Uso
 
-* Pesquisa de comportamento financeiro
-* Coleta de dados em campo
+* Análise de comportamento financeiro
 * Perfil de clientes
-* Análise de risco financeiro
+* Coleta de dados em campo
+* Sistemas de análise de risco
 
 ---
 
 ## 🔮 Melhorias Futuras
 
-* Integração com banco de dados em nuvem
-* Autenticação real de usuários
-* Dashboard mais avançado
-* Uso de Machine Learning para análise de risco
+* Integração com nuvem
+* Machine Learning
+* Dashboards avançados
 * Integração com APIs financeiras
 
 ---
 
 ## 👩‍💻 Autora
 
-Desenvolvido por Michelle Kaolin 
+**Michelle Kaolin Vieira Souza**
 
 ---
 
 ## 📄 Licença
 
-Projeto desenvolvido para fins educacionais.
+Projeto educacional.
+
+---
+
+Se você quiser dar um passo mais estratégico ainda, eu posso:
+
+* adaptar isso **pra descrição do LinkedIn (super otimizada)**
+* ou transformar em **pitch de projeto pra recrutador (30–60 segundos)**
+
+Isso aqui já está forte, mas dá pra deixar ainda mais “contratável”.
