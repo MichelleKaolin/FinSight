@@ -1,136 +1,160 @@
-# 📱 FinSight – Financial Behavior Insights App
+# 🇺🇸 FinSight – Financial Behavior Insights Platform
 
 ## 🚀 Overview
 
-FinSight is a mobile application designed to collect and analyze financial behavior data in real-world scenarios. The app enables financial institutions, researchers, and analysts to better understand user needs, identify financial risks, and generate actionable insights.
+**FinSight** is a full-stack **financial data analytics platform** designed to collect, manage, and analyze **user financial behavior** in real-world environments.
 
-This project was developed as part of an academic initiative, with a strong focus on real-world applicability in the financial sector.
+The system combines:
+
+* 📱 **Mobile Application (Android - Kotlin, MVVM)**
+* 🌐 **Web Dashboard (PHP, SQLite, REST API)**
+* 🧠 **Data Analytics (Python)**
+
+Built with a focus on **data-driven decision-making**, **user behavior analysis**, and **financial risk assessment**.
 
 ---
 
 ## 🎯 Problem Statement
 
-Financial institutions often struggle to collect structured and reliable data about customer financial behavior, especially in field environments.
+Financial institutions face challenges in collecting **structured, real-time financial behavior data** from users in field environments.
 
-FinSight solves this problem by providing a simple and efficient tool for data collection and analysis, supporting better decision-making and personalized financial services.
+FinSight provides:
 
----
-
-## 🧩 Features
-
-### 🔐 Authentication
-
-* Predefined users (for demonstration purposes):
-
-  * Admin
-  * Agent (data collector)
+* Efficient **data collection workflows**
+* Structured **data storage and processing**
+* Actionable **analytics and insights dashboards**
 
 ---
 
-### 📊 Data Collection (Agent Flow)
+## 🧠 Key Features (ATS Keywords)
 
-* Select financial preference:
-
-  * Credit
-  * Investment
-  * Savings
-  * Loan
-  * Card
-
-* Select up to 3 financial challenges:
-
-  * Debt
-  * Lack of financial control
-  * Low income
-  * No access to credit
-  * Fraud risk
-  * Financial illiteracy
-
-* Register user data:
-
-  * Name
-  * Phone number
-  * Automatic timestamp
-  * Geolocation (latitude & longitude)
-
----
-
-### 📈 Analytics Dashboard (Admin)
-
-* Total number of responses
-* Most common financial preference
-* Most reported financial problems
-* Basic financial risk classification:
-
-  * Low Risk
-  * Medium Risk
-  * High Risk
-
----
-
-### 👥 User Management
-
-* View collected responses
-* Access user data
-
----
-
-### 🧹 Data Management
-
-* Clear all collected data
+* Financial Data Analysis
+* User Behavior Analytics
+* Data Collection System
+* REST API Development
+* Full-Stack Development
+* Mobile Development (Android, Kotlin)
+* MVVM Architecture
+* SQLite / Room Database
+* Data Visualization (Dashboards, Charts)
+* Geolocation Integration (GPS)
+* Role-Based Access Control (RBAC)
+* Secure Authentication (bcrypt, sessions)
+* Accessibility (TTS, ARIA, high contrast)
 
 ---
 
 ## 🏗️ Architecture
 
-The application follows a structured architecture based on:
+### 🔹 Web Application
 
-* MVVM (Model-View-ViewModel)
-* Clean Architecture principles
+* PHP 8+
+* SQLite (PDO)
+* RESTful API
+* Server-side rendering
 
-### Layers:
-
-* **UI Layer** – Activities and user interaction
-* **Domain Layer** – Business logic
-* **Data Layer** – Local database (Room)
-
----
-
-## 🛠️ Tech Stack
+### 🔹 Mobile Application
 
 * Kotlin
 * Android Studio
-* Room Database (SQLite)
 * MVVM Architecture
-* Android Location Services
+* Room Database (SQLite)
+
+### 🔹 Analytics Layer
+
+* Python (data processing & reporting)
+
+---
+
+## 📱 Mobile App Features
+
+### 🔐 Authentication
+
+* Role-based access: **Admin / Agent**
+
+### 📊 Data Collection Workflow
+
+* Financial Preferences (Credit, Investment, Savings, Loan, Card)
+* Financial Challenges (Debt, Low Income, Fraud Risk, etc.)
+* User Data Collection:
+
+  * Name
+  * Phone
+  * Timestamp
+  * Geolocation (GPS)
+
+---
+
+## 🌐 Web Dashboard Features
+
+### 📊 Data Visualization
+
+* KPI Metrics
+* Behavioral trends
+* Risk distribution charts
+* Agent performance tracking
+
+### 👥 User & Data Management
+
+* View and manage collected data
+* Edit and delete records
+* User role management
+
+### 📈 Risk Classification
+
+* Low Risk
+* Medium Risk
+* High Risk
+
+---
+
+## ⚙️ Tech Stack (ATS Optimized)
+
+* **Frontend:** HTML, CSS, JavaScript
+* **Backend:** PHP
+* **Mobile:** Kotlin (Android)
+* **Database:** SQLite, Room
+* **Architecture:** MVVM, Clean Architecture
+* **Analytics:** Python
+* **Tools:** Git, GitHub, Android Studio
+
+---
+
+## 🔐 Security
+
+* Password hashing (**bcrypt**)
+* Prepared statements (PDO)
+* Input sanitization
+* Session-based authentication
 
 ---
 
 ## 📍 Use Cases
 
-* Financial behavior research
-* Field data collection
-* Customer profiling
-* Risk analysis for financial services
+* Financial Behavior Analysis
+* Customer Profiling
+* Field Data Collection
+* Risk Assessment Systems
 
 ---
 
 ## 🔮 Future Improvements
 
-* Cloud database integration (Firebase / AWS)
-* User authentication with real credentials
-* Advanced analytics dashboard
-* Machine learning-based risk scoring
-* API integration for financial services
+* Cloud integration (AWS, Firebase)
+* Machine Learning for risk scoring
+* Advanced analytics dashboards
+* API integrations for financial services
 
 ---
 
 ## 👩‍💻 Author
 
-Developed by Michelle Kaolin
+**Michelle Kaolin Vieira Souza**
 
 ---
 
 ## 📄 License
 
-This project is for educational purposes.
+Educational project.
+
+---
