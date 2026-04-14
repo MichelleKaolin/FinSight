@@ -1,7 +1,3 @@
-Perfeito — isso aqui vai te ajudar muito pra vaga internacional. Vou te entregar duas versões (🇺🇸 EN + 🇧🇷 PT) já otimizadas com **palavras-chave ATS** que recrutadores e sistemas filtram.
-
----
-
 # 🇺🇸 FinSight – Financial Behavior Insights Platform
 
 ## 🚀 Overview
@@ -320,12 +316,3 @@ O FinSight resolve isso com:
 ## 📄 Licença
 
 Projeto educacional.
-
----
-
-Se você quiser dar um passo mais estratégico ainda, eu posso:
-
-* adaptar isso **pra descrição do LinkedIn (super otimizada)**
-* ou transformar em **pitch de projeto pra recrutador (30–60 segundos)**
-
-Isso aqui já está forte, mas dá pra deixar ainda mais “contratável”.
