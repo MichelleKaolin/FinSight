@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>LoginActivity.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+LoginActivity.kt</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com</span><span class="s2">.</span><span class="s1">example</span><span class="s2">.</span><span class="s1">finsight</span><span class="s2">.</span><span class="s1">ui</span><span class="s2">.</span><span class="s1">login</span>
+
+<span class="s1">import android</span><span class="s2">.</span><span class="s1">content</span><span class="s2">.</span><span class="s1">Intent</span>
+<span class="s1">import android</span><span class="s2">.</span><span class="s1">os</span><span class="s2">.</span><span class="s1">Bundle</span>
+<span class="s1">import android</span><span class="s2">.</span><span class="s1">widget</span><span class="s2">.</span><span class="s1">Toast</span>
+<span class="s1">import androidx</span><span class="s2">.</span><span class="s1">activity</span><span class="s2">.</span><span class="s1">enableEdgeToEdge</span>
+<span class="s1">import androidx</span><span class="s2">.</span><span class="s1">activity</span><span class="s2">.</span><span class="s1">viewModels</span>
+<span class="s1">import androidx</span><span class="s2">.</span><span class="s1">appcompat</span><span class="s2">.</span><span class="s1">app</span><span class="s2">.</span><span class="s1">AppCompatActivity</span>
+<span class="s1">import androidx</span><span class="s2">.</span><span class="s1">core</span><span class="s2">.</span><span class="s1">view</span><span class="s2">.</span><span class="s1">ViewCompat</span>
+<span class="s1">import androidx</span><span class="s2">.</span><span class="s1">core</span><span class="s2">.</span><span class="s1">view</span><span class="s2">.</span><span class="s1">WindowInsetsCompat</span>
+<span class="s1">import com</span><span class="s2">.</span><span class="s1">example</span><span class="s2">.</span><span class="s1">finsight</span><span class="s2">.</span><span class="s1">databinding</span><span class="s2">.</span><span class="s1">ActivityLoginBinding</span>
+<span class="s1">import com</span><span class="s2">.</span><span class="s1">example</span><span class="s2">.</span><span class="s1">finsight</span><span class="s2">.</span><span class="s1">ui</span><span class="s2">.</span><span class="s1">dashboard</span><span class="s2">.</span><span class="s1">DashboardActivity</span>
+<span class="s1">import com</span><span class="s2">.</span><span class="s1">example</span><span class="s2">.</span><span class="s1">finsight</span><span class="s2">.</span><span class="s1">ui</span><span class="s2">.</span><span class="s1">survey</span><span class="s2">.</span><span class="s1">SurveyFormActivity</span>
+
+<span class="s0">class </span><span class="s1">LoginActivity : AppCompatActivity</span><span class="s2">() {</span>
+
+    <span class="s1">private lateinit </span><span class="s0">var </span><span class="s1">binding: ActivityLoginBinding</span>
+    <span class="s1">private </span><span class="s0">val </span><span class="s1">viewModel: LoginViewModel by viewModels</span><span class="s2">()</span>
+
+    <span class="s1">override </span><span class="s0">fun </span><span class="s1">onCreate</span><span class="s2">(</span><span class="s1">savedInstanceState: Bundle?</span><span class="s2">) {</span>
+        <span class="s1">enableEdgeToEdge</span><span class="s2">()</span>
+        <span class="s0">super</span><span class="s2">.</span><span class="s1">onCreate</span><span class="s2">(</span><span class="s1">savedInstanceState</span><span class="s2">)</span>
+        <span class="s1">binding </span><span class="s2">= </span><span class="s1">ActivityLoginBinding</span><span class="s2">.</span><span class="s1">inflate</span><span class="s2">(</span><span class="s1">layoutInflater</span><span class="s2">)</span>
+        <span class="s1">setContentView</span><span class="s2">(</span><span class="s1">binding</span><span class="s2">.</span><span class="s1">root</span><span class="s2">)</span>
+
+        <span class="s1">ViewCompat</span><span class="s2">.</span><span class="s1">setOnApplyWindowInsetsListener</span><span class="s2">(</span><span class="s1">binding</span><span class="s2">.</span><span class="s1">root</span><span class="s2">) { </span><span class="s1">v</span><span class="s2">, </span><span class="s1">insets </span><span class="s2">-&gt;</span>
+            <span class="s0">val </span><span class="s1">systemBars </span><span class="s2">= </span><span class="s1">insets</span><span class="s2">.</span><span class="s1">getInsets</span><span class="s2">(</span><span class="s1">WindowInsetsCompat</span><span class="s2">.</span><span class="s1">Type</span><span class="s2">.</span><span class="s1">systemBars</span><span class="s2">())</span>
+            <span class="s1">v</span><span class="s2">.</span><span class="s1">setPadding</span><span class="s2">(</span><span class="s1">systemBars</span><span class="s2">.</span><span class="s1">left</span><span class="s2">, </span><span class="s1">systemBars</span><span class="s2">.</span><span class="s1">top</span><span class="s2">, </span><span class="s1">systemBars</span><span class="s2">.</span><span class="s1">right</span><span class="s2">, </span><span class="s1">systemBars</span><span class="s2">.</span><span class="s1">bottom</span><span class="s2">)</span>
+            <span class="s1">insets</span>
+        <span class="s2">}</span>
+
+        <span class="s1">setupListeners</span><span class="s2">()</span>
+        <span class="s1">observeViewModel</span><span class="s2">()</span>
+    <span class="s2">}</span>
+
+    <span class="s1">private </span><span class="s0">fun </span><span class="s1">setupListeners</span><span class="s2">() {</span>
+        <span class="s1">binding</span><span class="s2">.</span><span class="s1">btnLogin</span><span class="s2">.</span><span class="s1">setOnClickListener </span><span class="s2">{</span>
+            <span class="s0">val </span><span class="s1">username </span><span class="s2">= </span><span class="s1">binding</span><span class="s2">.</span><span class="s1">etUsername</span><span class="s2">.</span><span class="s1">text</span><span class="s2">.</span><span class="s1">toString</span><span class="s2">()</span>
+            <span class="s0">val </span><span class="s1">password </span><span class="s2">= </span><span class="s1">binding</span><span class="s2">.</span><span class="s1">etPassword</span><span class="s2">.</span><span class="s1">text</span><span class="s2">.</span><span class="s1">toString</span><span class="s2">()</span>
+            <span class="s1">viewModel</span><span class="s2">.</span><span class="s1">login</span><span class="s2">(</span><span class="s1">username</span><span class="s2">, </span><span class="s1">password</span><span class="s2">)</span>
+        <span class="s2">}</span>
+    <span class="s2">}</span>
+
+    <span class="s1">private </span><span class="s0">fun </span><span class="s1">observeViewModel</span><span class="s2">() {</span>
+        <span class="s1">viewModel</span><span class="s2">.</span><span class="s1">loginResult</span><span class="s2">.</span><span class="s1">observe</span><span class="s2">(</span><span class="s0">this</span><span class="s2">) { </span><span class="s1">result </span><span class="s2">-&gt;</span>
+            <span class="s0">when </span><span class="s2">(</span><span class="s1">result</span><span class="s2">) {</span>
+                <span class="s0">is </span><span class="s1">LoginViewModel</span><span class="s2">.</span><span class="s1">LoginResult</span><span class="s2">.</span><span class="s1">Success </span><span class="s2">-&gt; {</span>
+                    <span class="s1">navigateToNextScreen</span><span class="s2">(</span><span class="s1">result</span><span class="s2">.</span><span class="s1">role</span><span class="s2">)</span>
+                <span class="s2">}</span>
+                <span class="s0">is </span><span class="s1">LoginViewModel</span><span class="s2">.</span><span class="s1">LoginResult</span><span class="s2">.</span><span class="s1">Error </span><span class="s2">-&gt; {</span>
+                    <span class="s1">Toast</span><span class="s2">.</span><span class="s1">makeText</span><span class="s2">(</span><span class="s0">this</span><span class="s2">, </span><span class="s1">result</span><span class="s2">.</span><span class="s1">message</span><span class="s2">, </span><span class="s1">Toast</span><span class="s2">.</span><span class="s1">LENGTH_SHORT</span><span class="s2">).</span><span class="s1">show</span><span class="s2">()</span>
+                <span class="s2">}</span>
+            <span class="s2">}</span>
+        <span class="s2">}</span>
+    <span class="s2">}</span>
+
+    <span class="s1">private </span><span class="s0">fun </span><span class="s1">navigateToNextScreen</span><span class="s2">(</span><span class="s1">role: String</span><span class="s2">) {</span>
+        <span class="s0">val </span><span class="s1">intent </span><span class="s2">= </span><span class="s0">if </span><span class="s2">(</span><span class="s1">role </span><span class="s2">== </span><span class="s3">&quot;admin&quot;</span><span class="s2">) {</span>
+            <span class="s1">Intent</span><span class="s2">(</span><span class="s0">this</span><span class="s2">, </span><span class="s1">DashboardActivity::</span><span class="s0">class</span><span class="s2">.</span><span class="s1">java</span><span class="s2">).</span><span class="s1">apply </span><span class="s2">{</span>
+                <span class="s1">putExtra</span><span class="s2">(</span><span class="s3">&quot;ROLE&quot;</span><span class="s2">, </span><span class="s3">&quot;admin&quot;</span><span class="s2">)</span>
+            <span class="s2">}</span>
+        <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+            <span class="s1">Intent</span><span class="s2">(</span><span class="s0">this</span><span class="s2">, </span><span class="s1">SurveyFormActivity::</span><span class="s0">class</span><span class="s2">.</span><span class="s1">java</span><span class="s2">).</span><span class="s1">apply </span><span class="s2">{</span>
+                <span class="s1">putExtra</span><span class="s2">(</span><span class="s3">&quot;ROLE&quot;</span><span class="s2">, </span><span class="s3">&quot;entrevistador&quot;</span><span class="s2">)</span>
+            <span class="s2">}</span>
+        <span class="s2">}</span>
+        <span class="s1">startActivity</span><span class="s2">(</span><span class="s1">intent</span><span class="s2">)</span>
+        <span class="s1">finish</span><span class="s2">()</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>

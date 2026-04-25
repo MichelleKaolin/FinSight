@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTotalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quant. de pessoas entrevistadas: 0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/graphite"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvVotesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quant. de votos para cada investimento:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvTotalLabel"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/llStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvVotesLabel">
+
+            <!-- Stat items will be added here or statically defined -->
+            <TextView android:id="@+id/tvCdb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CDB: 0%" android:layout_marginBottom="8dp"/>
+            <TextView android:id="@+id/tvAcoes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ações: 0%" android:layout_marginBottom="8dp"/>
+            <TextView android:id="@+id/tvFiis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FIIs: 0%" android:layout_marginBottom="8dp"/>
+            <TextView android:id="@+id/tvPrev" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Previdência: 0%" android:layout_marginBottom="8dp"/>
+            <TextView android:id="@+id/tvCripto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cripto: 0%" android:layout_marginBottom="8dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvChartLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distribuição"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@id/llStats"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Mock Chart Placeholder -->
+        <View
+            android:id="@+id/chartPlaceholder"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/ic_launcher_foreground"
+            android:backgroundTint="@color/accent_red"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvChartLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

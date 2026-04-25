@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Financial Survey"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/graphite"
+            android:layout_marginBottom="24dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Information"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone"
+                    android:layout_marginTop="12dp"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Investment Preference"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rgPreference"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton android:id="@+id/rbCdb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CDB"/>
+                    <RadioButton android:id="@+id/rbAcoes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ações"/>
+                    <RadioButton android:id="@+id/rbFiis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FIIs"/>
+                    <RadioButton android:id="@+id/rbPrevidencia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Previdência"/>
+                    <RadioButton android:id="@+id/rbCripto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cripto"/>
+                </RadioGroup>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Financial Challenges (Select up to 3)"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="1">
+                    <CheckBox android:id="@+id/cbDividas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dívidas"/>
+                    <CheckBox android:id="@+id/cbInflacao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Inflação"/>
+                    <CheckBox android:id="@+id/cbConhecimento" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Falta de Conhecimento"/>
+                    <CheckBox android:id="@+id/cbImpostos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Altos Impostos"/>
+                    <CheckBox android:id="@+id/cbRentabilidade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Baixa Rentabilidade"/>
+                    <CheckBox android:id="@+id/cbPlanejamento" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Planejamento"/>
+                    <CheckBox android:id="@+id/cbEmergencias" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Emergências"/>
+                    <CheckBox android:id="@+id/cbAposentadoria" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aposentadoria"/>
+                    <CheckBox android:id="@+id/cbEducacao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Educação"/>
+                    <CheckBox android:id="@+id/cbOutros" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Outros"/>
+                </GridLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Risk Level"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rgRisk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/rbLow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Baixo"/>
+                    <RadioButton android:id="@+id/rbMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Médio" android:layout_marginStart="8dp"/>
+                    <RadioButton android:id="@+id/rbHigh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alto" android:layout_marginStart="8dp"/>
+                </RadioGroup>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Submit Survey"
+            style="@style/Widget.FinSight.Button" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
